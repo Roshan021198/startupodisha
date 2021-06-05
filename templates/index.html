@@ -1,0 +1,653 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Investor Connect Series</title>
+    <meta content="" name="description">
+
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css" rel="stylesheet' %}">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+                <img src="{% static 'assets/img/Orissajobsorg.gif' %}" alt="">
+                <img src="{% static 'assets/img/sodisha.png' %}" alt="">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+                    <li><a class="nav-link scrollto" href="{% url 'index' %}">Home</a></li>
+                    <li><a class="getstarted scrollto" target="_blank"
+                            href="https://docs.google.com/forms/d/1xba8AS6TdDWEaiW7MbqvCHFNskYeCmSpxgZcHSOKGX8/viewform?edit_requested=true">Register</a>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" id="small-version">
+                    <h1 data-aos="fade-up">FUND-Stack</h1>
+                    <h2 data-aos="fade-up" data-aos-delay="400">An initiative for supporting startups who aspire to raise funds and bridge the gulf with investors.</h2>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <div class="text-center text-lg-start">
+                            <a href="https://docs.google.com/forms/d/1xba8AS6TdDWEaiW7MbqvCHFNskYeCmSpxgZcHSOKGX8/viewform?edit_requested=true"
+                                target="_blank"
+                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Register</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="{% static 'assets/img/FUNDSTACK.png' %}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column justify-content-center computer-version">
+                    <h2 data-aos="fade-up" data-aos-delay="400">An initiative for supporting startups who aspire to raise funds and bridge the gulf with investors.</h2>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <div class="text-center text-lg-start">
+                            <a href="https://docs.google.com/forms/d/1xba8AS6TdDWEaiW7MbqvCHFNskYeCmSpxgZcHSOKGX8/viewform?edit_requested=true"
+                                target="_blank"
+                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Register</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <!-- =======  OverviewSection ======= -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row gx-0">
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="content">
+                            <!-- <h3>Overview</h3> -->
+                            <h2>Overview</h2>
+                            <p style="text-align:justify;">
+                                Startup Odisha, Government of Odisha brings an exclusive Investor Connect Series for the
+                                startups who are looking to raise funds for growing and scaling their business. The
+                                startups will be provided best-in-class mentoring from renowned investment leads,
+                                experts, angel investors and VCs. These sessions will cover a wide range of relevant
+                                topics for the startups to get acquaint with the funding ecosystem and get an outlook of
+                                the steps that they should follow before seeking funds. The participating startups will
+                                receive curated guidance on pitch perfection, investor readiness, legal compliance
+                                documentation and other necessary due diligence.
+                            </p>
+                            <!-- <div class="text-center text-lg-start">
+                                <a href="#"
+                                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Read More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center"  data-aos="zoom-out" data-aos-delay="200">
+                        <img src="{% static 'assets/img/overview2.svg' %}"  class="img-fluid mobile-version" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- End Overview Section -->
+
+        <!-- ======= Program Section ======= -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row gx-0">
+
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="{% static 'assets/img/programdetails.svg' %}" class="img-fluid mobile-version" alt="">
+                    </div>
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="content">
+                            <!-- <h3>Overview</h3> -->
+                            <h2>Programme Details</h2>
+                            <p style="text-align:justify;">
+                                The Series consists of <b>20 Sessions</b> that will start from <b>7th, June 2021</b>. The
+                                schedule of dates, topics and speakers is notified in the program tab <a class="btn-get-started scrollto"
+                                href="#hero">above</a>.
+                            </p>
+                            <p style="text-align:justify;">The Participants must attend all the sessions to learn the art of pitching and get
+                                prepared for their first Master Pitch before the panel of investors.</p>
+                            <p style="text-align:justify;">Selected startups will get an opportunity to pitch during Mock Pitch Sessions, Demo Days
+                                and Investor Conclave in subsequent months.</p>
+                            <!-- <div class="text-center text-lg-start">
+                                <a href="#"
+                                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Read More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section><!-- End About Section -->
+
+        <!-- ======= Clients Section ======= -->
+        {% if logo %}
+        <section id="clients" class="clients">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Investor Partners</p>
+                </header>
+
+                <div class="clients-slider swiper-container">
+                    <div class="swiper-wrapper align-items-center">
+                        {% for logo_url in logo %}
+                        <div class="swiper-slide"><img src="{{logo_url.logo_img.url}}"
+                                class="img-fluid" alt=""></div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section><!-- End Clients Section -->
+        {% endif %}
+
+
+        <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+        <div class="container" data-aos="fade-up">
+  
+          <header class="section-header">
+            <h2>Portfolio</h2>
+            <p>Check our latest work</p>
+          </header>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <!-- <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul> -->
+            </div>
+          </div>
+  
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                    <a href="{% static 'portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                    <a href="{% static 'portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- End Portfolio Section -->
+
+
+
+        <!-- ======= Values Section ======= -->
+        <section id="values" class="values features">
+
+            <div class="container feature-icons" style="
+            margin-top: 0px;" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Why to Participate ?</p>
+                </header>
+                <div class="row">
+
+
+
+                    <div class="col-xl-6 d-flex content">
+                        <div class="row align-self-center gy-4">
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up">
+                                <i class="ri-computer-line"></i>
+                                <div>
+                                    <h4>Curated Mentoring Sessions by Experts</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <i class="ri-stack-line"></i>
+                                <div>
+                                    <h4>Knowledge Sessions on Influential Topics</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <i class="ri-scales-3-line"></i>
+                                <div>
+                                    <h4>Legal & Compliance Readiness</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                <i class="ri-question-answer-line"></i>
+                                <div>
+                                    <h4>Interaction with seasoned investors/enablers</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                <i class="ri-book-2-line"></i>
+                                <div>
+                                    <h4>Learning due diligence</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                <i class="ri-arrow-up-circle-line"></i>
+                                <div>
+                                    <h4>Formulate Exit Strategies</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="600">
+                                <i class="ri-slideshow-line"></i>
+                                <div>
+                                    <h4>Pitch Deck Preparation</h4>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="700">
+                                <i class="ri-slideshow-3-line"></i>
+                                <div>
+                                    <h4>Mock Pitch Sessions</h4>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6" data-aos="fade-right" data-aos-delay="100">
+
+                        <img src="{% static 'assets/img/question.svg' %}" class="img-fluid mobile-version" alt="">
+                    </div>
+
+                </div>
+
+                <!-- End Feature Icons -->
+
+
+            </div>
+
+        </section>
+        <!-- End Values Section -->
+
+
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+
+            <div class="container" data-aos="fade-up">
+
+
+                <!-- Feature Icons -->
+
+
+
+                <header class="section-header">
+
+                    <p>Who can Apply ?</p>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <img src="{% static 'assets/img/check.svg' %}" class="img-fluid mobile-version" alt="">
+                    </div>
+
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                        <div class="row align-self-center gy-4">
+
+                            <div class="col-md-12">
+                                <h3>Startups who are interested to raise private funding in the category
+                                    of:</h3>
+                            </div>
+
+                            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Seed Fund (upto INR 25 lakhs)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Pre-series Fund (INR 1-3 crores)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="400">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Series A Fund (INR 5- 15 crores)</h3>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div> <!-- / row -->
+
+                <!-- Feature Tabs -->
+
+
+
+            </div>
+
+        </section><!-- End Features Section -->
+
+<!-- Message Section -->
+        <div class="container" data-aos="fade-up">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <header class="section-header">
+                    <p style="font-size: 1.5rem; text-transform: uppercase;">" No Fees or Charges are applicable to be a
+                        participant for this programme "</p>
+                </header>
+            </div>
+        </div>
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <p>How to Apply?</p>
+                    <h3 class="mt-4">Register through the link provided <a class="btn-get-started scrollto"
+                        href="#hero">above</a>.</h3>
+                </header>
+            </div>
+
+        </section><!-- End Services Section -->
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+
+                <p>Last Date of Registration</p>
+                <h3 class="mt-4"><i class="ri-calendar-check-line p-1" style="vertical-align: sub;"></i>3rd June, 2021 (Thursday)</h3>
+                
+            </header>
+        </div>
+
+
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Our Partners</p>
+                </header>
+
+                <div class="clients-slider swiper-container">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/ftbi.png' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/Electropreneur.png' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/Kiit-tbi.jpg' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/Sri_Sri_University.png' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/AIC-CVRCEF.png' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/TiEbbsr.png' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/Gramtarang.jpg' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/AIC.jpg' %}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/csl.png' %}"
+                                    class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'assets/img/clients/mycitylinks.jpeg' %}"
+                                        class="img-fluid" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section><!-- End Clients Section -->
+
+       
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="{% url 'index' %}" class="logo d-flex align-items-center mb-5">
+                            <img src="{% static 'assets/img/Orissajobsorg.gif' %}" alt="">
+                            <img src="{% static 'assets/img/sodisha.png' %}" alt="">
+                        </a>
+                        <!-- <p>A NEW WAVE OF INNOVATION</p> -->
+                        <div class="social-links mt-5">
+                            <a target="_blank" href="https://twitter.com/startup_odisha" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/startupodisha2016" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a taarget="_blank" href="https://www.linkedin.com/company/startupodisha/mycompany/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                            
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-2 col-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Startup Secretariat, IED Odisha<br>
+                            Plot No-123, Sector-A, Zone-A,<br>
+                            Mancheswar Industrial Estate,<br>
+                            Bhubaneswar- 751010,<br>
+                            Odisha, India<br> <br>
+                           
+                            <strong>Phone:</strong> 0674-2585609 | 2587176 | 2587286<br>
+                            <strong>Email:</strong> startup[dot]odisha[at]gov[dot]in<br></p>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                 &copy; 2021 All Rights Reserved by <strong><span>Startup Odisha</span></strong>. 
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
